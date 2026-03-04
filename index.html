@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Le Dien Tien - Backend Developer portfolio. Java Spring Boot, RESTful API, MySQL." />
+  <title>Le Dien Tien - Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">LDT</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-bg"></div>
+    <div class="hero-orb"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">Available for Backend Internship / Junior roles</div>
+      <h1 class="hero-name">Le Dien Tien</h1>
+      <h2 class="hero-role">Backend Developer</h2>
+      <p class="hero-statement">
+        I build reliable server-side systems — RESTful APIs, authentication flows, and data management layers — using
+        Java Spring Boot and MySQL.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary" id="hero-projects-btn">View Projects</a>
+        <a href="#contact" class="btn-ghost" id="hero-contact-btn">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a software engineering student at Posts and Telecommunications Institute of Technology (PTIT),
+            currently specializing in backend development with Java and Spring Boot. My primary focus is on building
+            structured, maintainable server-side systems rather than accumulating a wide but shallow skill set.
+          </p>
+          <p>
+            Over the past year I have worked on three backend projects — two as part of a professional internship team
+            and one independently. Through these, I have gained hands-on experience designing RESTful APIs, implementing
+            JWT-based authentication, modeling relational data schemas in MySQL, and following Agile/Scrum workflows.
+          </p>
+          <p>
+            I read English technical documentation at an intermediate level, which allows me to work directly with
+            official Spring, Hibernate, and security references rather than relying on translated material.
+          </p>
+          <p>
+            My near-term goal is to deepen my understanding of backend engineering fundamentals — API design, database
+            optimization, and system reliability — through real production work and code review with senior engineers.
+          </p>
+        </div>
+        <div class="about-aside">
+          <div class="info-card">
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Nam Tu Liem, Hanoi</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">University</span>
+              <span class="info-value">PTIT (2023 – present)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Major</span>
+              <span class="info-value">Software Technology</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-value status-open">Open to work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group" id="skill-backend">
+          <h3 class="skill-group-title">Backend</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>Java</li>
+            <li class="skill-item"><span class="skill-dot"></span>Spring Boot</li>
+            <li class="skill-item"><span class="skill-dot"></span>Spring Security</li>
+            <li class="skill-item"><span class="skill-dot"></span>JPA / Hibernate</li>
+            <li class="skill-item"><span class="skill-dot"></span>RESTful API design</li>
+            <li class="skill-item"><span class="skill-dot"></span>JWT Authentication</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" id="skill-database">
+          <h3 class="skill-group-title">Database</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>MySQL</li>
+            <li class="skill-item"><span class="skill-dot"></span>Schema design (MVC model)</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" id="skill-tools">
+          <h3 class="skill-group-title">Tools &amp; Workflow</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>Git</li>
+            <li class="skill-item"><span class="skill-dot"></span>Swagger / OpenAPI</li>
+            <li class="skill-item"><span class="skill-dot"></span>Postman</li>
+            <li class="skill-item"><span class="skill-dot"></span>IntelliJ IDEA</li>
+            <li class="skill-item"><span class="skill-dot"></span>Agile / Scrum</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" id="skill-other">
+          <h3 class="skill-group-title">Other</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-dot"></span>ReactJS (basic, used in fullstack context)</li>
+            <li class="skill-item"><span class="skill-dot"></span>English – intermediate (technical reading)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-card" id="project-rika-job">
+          <div class="project-header">
+            <div>
+              <span class="project-badge">Team · 6 members</span>
+              <h3 class="project-name">RIKA Job Information Portal</h3>
+              <a class="project-link" href="https://jobs.rikkei.edu.vn/" target="_blank"
+                rel="noopener">jobs.rikkei.edu.vn</a>
+            </div>
+            <div class="project-duration">Nov 2025 – Feb 2026</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Problem</h4>
+              <p>Rikkeisoft needed an internal job portal for posting positions, accepting candidate applications, and
+                scheduling interviews — with separate flows for recruiters and applicants.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>My Role</h4>
+              <p>Full-Stack Developer Intern. Responsible for backend RESTful API development and integration with the
+                React frontend built by other team members.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Backend Architecture</h4>
+              <p>Spring Boot REST API following a layered architecture (Controller → Service → Repository). MySQL for
+                persistence. Authentication and role-based access were handled on the backend. Team followed Agile/Scrum
+                with regular sprint reviews and code reviews.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>Job posting creation and management</li>
+                <li>Candidate application submission flow</li>
+                <li>Interview scheduling</li>
+                <li>Code review and progress reporting in Scrum sprints</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">ReactJS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" id="project-music-platform">
+          <div class="project-header">
+            <div>
+              <span class="project-badge">Team · 5 members</span>
+              <h3 class="project-name">Music Platform Backend API</h3>
+            </div>
+            <div class="project-duration">Aug 2025 – Oct 2025</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Problem</h4>
+              <p>The team needed a backend system to power a music streaming platform — covering user accounts, song
+                catalog management, playlist handling, social interactions, and access control.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>My Role</h4>
+              <p>Backend Developer Intern. Core contributor to API design and implementation. Also responsible for MySQL
+                schema design and integrating Spring Security for authentication and authorization.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Backend Architecture</h4>
+              <p>Pure backend project. Spring Boot REST API with Spring Security providing stateless JWT-based
+                authentication. MySQL stores users, songs, playlists, comments, and follow relationships. API documented
+                with Swagger.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>JWT authentication and role-based authorization</li>
+                <li>Song and playlist CRUD</li>
+                <li>Comment system</li>
+                <li>User follow / unfollow</li>
+                <li>MySQL schema design for relational data</li>
+                <li>Swagger API documentation</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Security</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JWT</span>
+              <span class="tech-tag">Swagger</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" id="project-course-management">
+          <div class="project-header">
+            <div>
+              <span class="project-badge">Solo · Personal Project</span>
+              <h3 class="project-name">Course and Student Management System</h3>
+              <a class="project-link" href="https://github.com/tienLD2005/ProjectJava" target="_blank"
+                rel="noopener">github.com/tienLD2005/ProjectJava</a>
+            </div>
+            <div class="project-duration">Apr 11 – Apr 23, 2025</div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-section">
+              <h4>Problem</h4>
+              <p>A self-directed project to build a complete backend system for managing students, courses, and
+                enrollment — reinforcing Spring Boot and MySQL skills outside of team work.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>My Role</h4>
+              <p>Sole developer. Designed the data model, implemented all API endpoints, and documented the API with
+                Swagger.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Backend Architecture</h4>
+              <p>MVC architecture with Spring Boot. MySQL database with relational tables for students, courses, and
+                enrollments. Spring Security handles authentication. Swagger documents all exposed endpoints.</p>
+            </div>
+
+            <div class="project-section">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>User registration and login</li>
+                <li>Full CRUD for courses and students</li>
+                <li>Enrollment management</li>
+                <li>Data statistics / reporting endpoints</li>
+                <li>Swagger API documentation</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Security</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Swagger</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience &amp; Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" id="exp-fullstack">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">Nov 2025 – Feb 2026</span>
+              <span class="timeline-company">Rikkeisoft</span>
+            </div>
+            <h3 class="timeline-title">Full-Stack Developer Intern</h3>
+            <p class="timeline-desc">Developed RESTful APIs for the RIKA Job Portal using Spring Boot. Participated in
+              Agile sprints, code review sessions, and integration work with the React frontend team.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="exp-backend">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">Aug 2025 – Oct 2025</span>
+              <span class="timeline-company">Rikkeisoft</span>
+            </div>
+            <h3 class="timeline-title">Backend Developer Intern</h3>
+            <p class="timeline-desc">Built the Music Platform Backend API. Designed the MySQL schema, implemented JWT
+              authentication, and documented APIs with Swagger as part of a 5-person team.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-ptit">
+          <div class="timeline-marker edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period">2023 – present</span>
+              <span class="timeline-company">Posts and Telecommunications Institute of Technology (PTIT)</span>
+            </div>
+            <h3 class="timeline-title">Software Technology</h3>
+            <p class="timeline-desc">Bachelor's program in Software Technology. Awarded "Highest Academic Progress" for
+              the 2023–2024 academic year by Rikkei Education x PTIT.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">I am open to backend internship and junior developer opportunities. Feel free to reach
+        out.</p>
+      <div class="contact-links">
+        <a class="contact-item" id="contact-email" href="mailto:ledientien2005@gmail.com">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <polyline points="2,4 12,13 22,4" />
+            </svg>
+          </span>
+          <span class="contact-label">ledientien2005@gmail.com</span>
+        </a>
+        <a class="contact-item" id="contact-github" href="https://github.com/tienLD2005" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+          </span>
+          <span class="contact-label">github.com/tienLD2005</span>
+        </a>
+        <a class="contact-item" id="contact-facebook" href="https://www.facebook.com/tien.ledien.961/" target="_blank"
+          rel="noopener">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.875v2.28h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+            </svg>
+          </span>
+          <span class="contact-label">facebook.com/tien.ledien</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Le Dien Tien &mdash; Backend Developer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
